@@ -112,5 +112,6 @@ class Keyboard {
     val keyRepeat = Event<KeyEvent>().postpone(true)
     val character = Event<Program.CharacterEvent>().postpone(true)
 
-    var pressedKeys = mutableSetOf<String>()
+    val pressedKeys = mutableSetOf<String>()
+    val pressedKeyCodes = mutableSetOf<Int>()
 }
